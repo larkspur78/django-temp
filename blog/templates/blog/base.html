@@ -1,0 +1,12 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+  </head>
+  <body>
+    <h1>Burrito Blog</h1>
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

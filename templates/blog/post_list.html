@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %}
+
+{%block content %}
+  <h3><em>posts</em><h3>
+  <div>
+    {% for post in posts %}
+      <div>
+        <h3>.{{ post.title }}</h3>
+        <a href="google.com">google</a>
+        <h5>{{ post.created_date }}</h5>
+        <p>{{ post.text }}</p>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
